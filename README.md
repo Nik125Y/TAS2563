@@ -13,6 +13,8 @@ Before running the example, make sure that:
 
 * The **I²C interface** is properly configured.
 * The DAC is initialized through the `TAS2563_Init()` function.
+* The DAC has an **SDZ pin**, which controls switching between the **normal operating mode** and a **limited functionality mode**.
+To enable the device, a **high logic level** must be applied to this pin. (In this example, the SDZ pin is connected to **GPIO_NUM_21**. If you are also using the **interrupt pin (IRQ)** and there is **no external pull-up resistor**, you can enable the **internal pull-up** through a DAC register.)
 
 ---
 
@@ -104,7 +106,7 @@ For detailed information on adjusting digital volume, refer to TI’s discussion
 
 ---
 
-## 📘 Notes
+## Notes
 
 * Always perform a software reset before reconfiguring the TAS2563.
 * Avoid changing I²S or TDM formats while the device is active — use software shutdown mode for that.
