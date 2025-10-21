@@ -111,5 +111,6 @@ For detailed information on adjusting digital volume, refer to TI’s discussion
 * Always perform a software reset before reconfiguring the TAS2563.
 * Avoid changing I²S or TDM formats while the device is active — use software shutdown mode for that.
 * Refer to the TI documentation for additional register descriptions and power management details.
+* There is the family of TI TASxxxx. Larger path of this family has the similar register structure. If you have one of these ICs, you can refer to this code fore initial example.
 
 ---
