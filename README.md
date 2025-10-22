@@ -112,5 +112,5 @@ For detailed information on adjusting digital volume, refer to TI’s discussion
 * Avoid changing I²S or TDM formats while the device is active — use software shutdown mode for that.
 * Refer to the TI documentation for additional register descriptions and power management details.
 * There is the family of TI TASxxxx. Larger path of this family has the similar register structure. If you have one of these ICs, you can refer to this code fore initial example.
-
+* With function `tas2563_read_reg` you can read debug and other registers
 ---
